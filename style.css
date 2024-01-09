@@ -1,0 +1,307 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    background-color:black;
+    color: white;
+    overflow: hidden;
+}
+.main {
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+.sidebar {
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem; /*1rem = 16px*/
+    margin-right: 0.5rem;
+}
+.main-content {
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.music-player {
+    background-color: #121212;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.nav {
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option {
+    height: 40px;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option i {
+    font-size:1.25rem;
+}
+.nav-option a {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.nav-option:hover {
+    opacity: 1;
+}
+.library {
+    padding: 0.5rem 0.75rem;
+    background-color: #121212;
+    margin-top: 10px;
+    border-radius: 1rem;
+    height: 67.5%;
+    line-height: 37px;
+}
+.library-opt1 {
+    padding: 0.5rem 0.75rem;
+    opacity: 0.7;
+}
+.library-opt1:hover {
+    opacity: 1;
+}
+.library-opt1 img{
+    width: 20px;
+    height: 20px;
+}
+.library-opt1 a {
+    font-size: 1rem;
+    margin-left: 1rem;
+    padding-right: 120px;
+}
+.btn1 button {
+    height: 32px;
+    width: 71.35px;
+    border-radius: 50px;
+    border: none;
+    background-color: #232323;
+    color: white;
+    opacity: 0.7;
+    margin-left: 6px;
+
+} 
+.btn1 button:hover {
+    opacity: 1;
+}   
+.library-opt2 {
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    align-items: center;
+}
+.library-opt2 i {
+    font-size: 14px;
+    opacity: 0.7;
+   
+}
+.recent {
+    opacity: 0.7;
+    font-size: 15px;
+}
+.recent a {
+    padding-left: 173px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+.library-opt3 img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.library-opt3 {
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+}
+.library-opt3:hover {
+    background-color: #232323;
+}
+.recent:hover {
+    font-size: 20px;
+    opacity: 1;
+}
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 1;
+}
+
+.sticky-nav-icons {
+    margin-left: 0.75rem;
+}
+.sticky-nav-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sticky-nav-option button {
+    margin-right: 1rem;
+}
+.sticky-nav-option .btn1 {
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    height: 32px;
+    width: 130px;
+    font-weight: bold;
+}
+.sticky-nav-option .btn2 {
+    background-color: black;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    height: 32px;
+    width: 110px;
+}
+.sticky-nav-option i {
+    margin-right: 1rem;
+}
+@media (max-width:1000px) {
+    .hide {
+        display: none;
+    }
+}
+.card {
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-title {
+    font-weight: 600;
+}
+.card-info {
+    font-size: 0.85rem;
+    opacity: 0.7;
+} 
+.line {
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+}
+.music-player {
+    display: flex;
+    background-color: black;
+}
+.player{
+    width: 50%;
+}
+.player-controls-icons {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+
+.player-controls-icons:hover {
+    opacity: 1;
+}
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.playback-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar {
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+}
+.progress-bar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    height: 0.2rem;
+    border-radius: 50px;
+}
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    background-color: #1bd760;
+    border-radius: 50px;
+    margin-top: -6px;
+}
+.album {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    width: 25%;
+
+}
+.album img {
+    width: 50px;
+    height: 50px;
+    padding-right: 15px;
+}
+.album .song-name {
+    font-size: 14px;
+    font-weight: bolder;
+}
+.album .song-name:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.album .song-singer {
+    font-size: 10px;
+    opacity: 0.7;
+}
+.album .song-singer:hover {
+    opacity: 1;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.album .like-me {
+    padding-left: 110px;
+    opacity: 0.7;
+}
+.album .like-me:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.controls {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.controls i {
+    opacity: 0.7;
+}
+.controls i:hover {
+    opacity: 1;
+}
+  
